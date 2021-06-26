@@ -1,12 +1,12 @@
 {
     "$schema": "http://json.schemastore.org/proxies",
     "proxies": {
-        "proxy1": {
+        "imageOfTheDay": {
             "matchCondition": {
                 "methods": [ "GET" ],
                 "route": "/api/image-of-the-day"
             },
-            "backendUri": "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
+            "backendUri": "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n={request.querystring.count}&mkt=en-US"
         }
     }
 }
