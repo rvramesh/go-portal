@@ -19,20 +19,13 @@
   },
   "lint-staged": {
     "src/**/*.{js,css,ts,tsx,json,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "webpack.config.js": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "package.json": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.md": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "eslintConfig": {
