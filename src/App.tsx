@@ -1,7 +1,7 @@
 import React from 'react';
 import { SWRConfig } from 'swr';
 import './App.css';
-import BackGround from './Components/BackGround';
+import Background from './Components/BackgroundImage/Background';
 
 const fetcher = async (url: RequestInfo) => {
   const res = await fetch(url);
@@ -22,7 +22,7 @@ function App() {
       value={{
         fetcher: fetcher,
       }}>
-      <BackGround></BackGround>
+      <Background></Background>
       <div className="relative">
         <div className="text-center space-y-2 sm:text-left">
           <div className="space-y-0.5">
